@@ -1,0 +1,18 @@
+:root {
+  --primary-color: map-get($primary-color);
+  --secondary-color: map-get($secondary-color);
+  --tertiary-color: map-get($tertiary-color);
+}
+
+$colors: (
+  $primary-color: #d35266,
+  $secondary-color: #888,
+  $tertiary-color: #383838,
+);
+
+$breakpoints: (
+  "xs": 360px,
+  "sm": 680px,
+  "md": 768px,
+  "lg": 1024px,
+);
