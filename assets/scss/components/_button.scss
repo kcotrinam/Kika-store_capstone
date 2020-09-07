@@ -1,14 +1,9 @@
 .btn {
   display: inline-block;
   padding: 0.5rem;
-  background-color: steelblue;
   border-radius: 4px;
   color: #fff;
   font-size: 0.7rem;
-
-  &:hover {
-    background-color: darken(steelblue, 10);
-  }
 
   &:active {
     transform: scale(0.9);

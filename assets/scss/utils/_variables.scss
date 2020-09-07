@@ -1,8 +1,15 @@
+:root {
+  --primary-color: #d35266;
+  --secondary-color: #888;
+  --tertiary-color: #383838;
+}
+
 $colors: (
   "primary-color": #d35266,
   "secondary-color": #888,
   "tertiary-color": #383838,
   "warning-color": red,
+  "white-color": #fff,
 );
 
 $breakpoints: (

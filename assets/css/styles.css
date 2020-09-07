@@ -155,6 +155,11 @@ h5,
 h6 {
   font-family: "Gotham-Bold"; }
 
+:root {
+  --primary-color: #d35266;
+  --secondary-color: #888;
+  --tertiary-color: #383838; }
+
 .bg-primary-color {
   background-color: #d35266; }
 
@@ -167,6 +172,9 @@ h6 {
 .bg-warning-color {
   background-color: red; }
 
+.bg-white-color {
+  background-color: #fff; }
+
 .primary-color {
   color: #d35266; }
 
@@ -178,6 +186,9 @@ h6 {
 
 .warning-color {
   color: red; }
+
+.white-color {
+  color: #fff; }
 
 .d-flex {
   display: flex; }
@@ -226,12 +237,9 @@ h6 {
 .btn {
   display: inline-block;
   padding: 0.5rem;
-  background-color: steelblue;
   border-radius: 4px;
   color: #fff;
   font-size: 0.7rem; }
-  .btn:hover {
-    background-color: #38678f; }
   .btn:active {
     transform: scale(0.9); }
 
@@ -257,3 +265,27 @@ h6 {
   .horizontal-card__buttons-container {
     height: 100%;
     justify-self: end; }
+
+.nav {
+  padding: 1rem 0.5rem; }
+  .nav__logo-container img {
+    width: clamp(30px, 10vw, 90px);
+    height: clamp(30px, 10vw, 45px); }
+  .nav__buttons li:not(:last-child) a {
+    color: #fff;
+    font-size: clamp(0.6em, 2vw, 1em);
+    padding: 0.6em; }
+    .nav__buttons li:not(:last-child) a:hover {
+      color: var(--primary-color); }
+  .nav__buttons li:last-child a:hover {
+    background: #c13147; }
+  .nav__login-container > * + * {
+    margin-left: 0.9rem; }
+  .nav__profile-pic img {
+    width: 40px;
+    border-radius: 50%; }
+  @media screen and (min-width: 768px) {
+    .nav {
+      justify-content: space-around; }
+      .nav__login-container {
+        display: flex; } }
