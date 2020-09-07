@@ -1,13 +1,8 @@
-:root {
-  --primary-color: map-get($primary-color);
-  --secondary-color: map-get($secondary-color);
-  --tertiary-color: map-get($tertiary-color);
-}
-
 $colors: (
-  $primary-color: #d35266,
-  $secondary-color: #888,
-  $tertiary-color: #383838,
+  "primary-color": #d35266,
+  "secondary-color": #888,
+  "tertiary-color": #383838,
+  "warning-color": red,
 );
 
 $breakpoints: (
@@ -16,3 +11,31 @@ $breakpoints: (
   "md": 768px,
   "lg": 1024px,
 );
+
+@each $name-color, $color in $colors {
+  .bg-#{$name-color} {
+    background-color: $color;
+  }
+}
+
+@each $name-color, $color in $colors {
+  .#{$name-color} {
+    color: $color;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}

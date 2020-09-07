@@ -1,0 +1,197 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("Gotham-Bold.otf"); }
+
+@font-face {
+  font-family: "gotham-rounded-light";
+  src: url("gotham-rounded-light.otf"); }
+
+body {
+  font-family: "gotham-rounded-light"; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gotham-Bold"; }
+
+.bg-primary-color {
+  background-color: #d35266; }
+
+.bg-secondary-color {
+  background-color: #888; }
+
+.bg-tertiary-color {
+  background-color: #383838; }
+
+.bg-warning-color {
+  background-color: red; }
+
+.primary-color {
+  color: #d35266; }
+
+.secondary-color {
+  color: #888; }
+
+.tertiary-color {
+  color: #383838; }
+
+.warning-color {
+  color: red; }
+
+.d-flex {
+  display: flex; }
+
+.d-block {
+  display: block; }
+
+.justify-content-between {
+  justify-content: space-between; }
+
+.align-center {
+  align-items: center; }
+
+.card {
+  max-width: 300px;
+  background-color: mistyrose;
+  padding: 1.2rem; }
+  .card__title, .card__subtitle {
+    font-weight: 200; }
+  .card * + * {
+    margin-top: 0.5rem; }
+  .card__more {
+    border: 1px solid #b3b3b3;
+    padding: 0.25rem; }

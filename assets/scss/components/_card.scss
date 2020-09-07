@@ -1,0 +1,19 @@
+.card {
+  max-width: 300px;
+  background-color: mistyrose;
+  padding: 1.2rem;
+
+  &__title,
+  &__subtitle {
+    font-weight: 200;
+  }
+
+  & * + * {
+    margin-top: 0.5rem;
+  }
+
+  &__more {
+    border: 1px solid hsl(0, 0, 70%);
+    padding: 0.25rem;
+  }
+}
