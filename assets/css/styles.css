@@ -200,13 +200,21 @@ h6 {
 .hidden {
   display: none; }
 
+.horizontal-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 10px; }
+  .horizontal-card__right-container {
+    display: grid;
+    grid-template-rows: 4fr 1fr; }
+
 .card {
   max-width: 300px;
   background-color: mistyrose;
   padding: 1.2rem; }
   .card__title, .card__subtitle {
     font-weight: 200; }
-  .card > * + * {
+  .card__info > * + * {
     margin-top: 0.5rem; }
   .card__more {
     border: 1px solid #b3b3b3;
@@ -214,6 +222,18 @@ h6 {
 
 .more-btn {
   cursor: pointer; }
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: steelblue;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.7rem; }
+  .btn:hover {
+    background-color: #38678f; }
+  .btn:active {
+    transform: scale(0.9); }
 
 .card__modal {
   bottom: 23px;
@@ -229,3 +249,11 @@ h6 {
 
 .more-input:checked ~ .card__modal {
   display: block; }
+
+.horizontal-card {
+  max-width: 500px; }
+  .horizontal-card__img-container {
+    max-width: 150px; }
+  .horizontal-card__buttons-container {
+    height: 100%;
+    justify-self: end; }

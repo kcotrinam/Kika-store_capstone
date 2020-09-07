@@ -1,0 +1,10 @@
+.horizontal-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 10px;
+
+  &__right-container {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+  }
+}

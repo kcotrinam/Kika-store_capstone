@@ -13,47 +13,77 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <article class="card">
-      <div class="card__img-container">
-        <img
-          src="https://images.ctfassets.net/od02wyo8cgm5/5kpFyd0r2uP97j7TIwahLc/49be548876c61e93ac58efab04906d5f/cloud_waterproof_2-fw19-black_lunar-w-g1.png"
-          alt=""
-        />
-      </div>
-      <h2 class="card__title">
-        Lorem, ipsum dolor sit amet consectetur adipisicing.
-      </h2>
-      <h3 class="card__subtitle warning-color">New</h3>
-      <p class="card__description">Lorem ipsum dolor sit.</p>
-      <div
-        class="card__sale-container d-flex justify-content-between align-center"
-      >
-        <ul class="card__more p-relative">
-          <li>
-            <label class="more-btn" for="show-modal" tabindex="0">
-              <i class="fas fa-plus"></i>
-            </label>
-            <input
-              type="checkbox"
-              class="more-input hidden"
-              name="modal"
-              id="show-modal"
-            />
-            <ul class="card__modal p-absolute hidden">
+    <div class="main">
+      <article class="card horizontal-card d-flex">
+        <div class="horizontal-card__img-container">
+          <img
+            src="https://images.ctfassets.net/od02wyo8cgm5/5kpFyd0r2uP97j7TIwahLc/49be548876c61e93ac58efab04906d5f/cloud_waterproof_2-fw19-black_lunar-w-g1.png"
+            alt=""
+          />
+        </div>
+        <div class="horizontal-card__right-container">
+          <div class="card__info">
+            <h2 class="card__title">Lorem, ipsum dolor.</h2>
+            <h3 class="card__subtitle warning-color">New</h3>
+            <p class="card__description">Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="horizontal-card__buttons-container">
+            <a class="btn" href="#">button</a>
+            <a class="btn" href="#">button2</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- <article class="card">
+        <div class="card__img-container">
+          <img
+            src="https://images.ctfassets.net/od02wyo8cgm5/5kpFyd0r2uP97j7TIwahLc/49be548876c61e93ac58efab04906d5f/cloud_waterproof_2-fw19-black_lunar-w-g1.png"
+            alt=""
+          />
+        </div>
+        <div class="card__info">
+          <h2 class="card__title">
+            Lorem, ipsum dolor sit amet consectetur adipisicing.
+          </h2>
+          <h3 class="card__subtitle warning-color">New</h3>
+          <p class="card__description">Lorem ipsum dolor sit.</p>
+          <div
+            class="card__sale-container d-flex justify-content-between align-center"
+          >
+            <ul class="card__more p-relative">
               <li>
-                <a class="more__options-link d-block" href="#">Lorem, ipsum.</a>
-              </li>
-              <li>
-                <a class="more__options-link d-block" href="#">Lorem, ipsum.</a>
-              </li>
-              <li>
-                <a class="more__options-link d-block" href="#">Lorem, ipsum.</a>
+                <label class="more-btn" for="show-modal" tabindex="0">
+                  <i class="fas fa-plus"></i>
+                </label>
+                <input
+                  type="checkbox"
+                  class="more-input hidden"
+                  name="modal"
+                  id="show-modal"
+                />
+                <ul class="card__modal p-absolute hidden">
+                  <li>
+                    <a class="more__options-link d-block" href="#"
+                      >Lorem, ipsum.</a
+                    >
+                  </li>
+                  <li>
+                    <a class="more__options-link d-block" href="#"
+                      >Lorem, ipsum.</a
+                    >
+                  </li>
+                  <li>
+                    <a class="more__options-link d-block" href="#"
+                      >Lorem, ipsum.</a
+                    >
+                  </li>
+                </ul>
               </li>
             </ul>
-          </li>
-        </ul>
-        <span class="price warning-color">200$</span>
-      </div>
-    </article>
+            <span class="price warning-color">200$</span>
+          </div>
+        </div>
+      </article> -->
+    </div>
   </body>
 </html>

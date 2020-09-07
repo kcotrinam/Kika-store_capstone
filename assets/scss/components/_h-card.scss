@@ -1,0 +1,12 @@
+.horizontal-card {
+  max-width: 500px;
+
+  &__img-container {
+    max-width: 150px;
+  }
+
+  &__buttons-container {
+    height: 100%;
+    justify-self: end;
+  }
+}
