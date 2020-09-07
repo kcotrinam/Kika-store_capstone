@@ -129,6 +129,13 @@ img {
   display: block;
   max-width: 100%; }
 
+button {
+  background-color: transparent; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
 @font-face {
   font-family: "Gotham-Bold";
   src: url("Gotham-Bold.otf"); }
@@ -184,14 +191,41 @@ h6 {
 .align-center {
   align-items: center; }
 
+.p-relative {
+  position: relative; }
+
+.p-absolute {
+  position: absolute; }
+
+.hidden {
+  display: none; }
+
 .card {
   max-width: 300px;
   background-color: mistyrose;
   padding: 1.2rem; }
   .card__title, .card__subtitle {
     font-weight: 200; }
-  .card * + * {
+  .card > * + * {
     margin-top: 0.5rem; }
   .card__more {
     border: 1px solid #b3b3b3;
     padding: 0.25rem; }
+
+.more-btn {
+  cursor: pointer; }
+
+.card__modal {
+  bottom: 23px;
+  left: 0;
+  background: wheat; }
+  .card__modal li:not(:last-child) a {
+    border-bottom: 1px solid black; }
+  .card__modal a {
+    padding: 0.25rem 0.25rem 0.75rem 0.25rem;
+    min-width: 200px; }
+    .card__modal a:hover {
+      background: #956814; }
+
+.more-input:checked ~ .card__modal {
+  display: block; }

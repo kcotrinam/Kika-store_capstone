@@ -8,7 +8,7 @@
     font-weight: 200;
   }
 
-  & * + * {
+  & > * + * {
     margin-top: 0.5rem;
   }
 
@@ -16,4 +16,8 @@
     border: 1px solid hsl(0, 0, 70%);
     padding: 0.25rem;
   }
+}
+
+.more-btn {
+  cursor: pointer;
 }

@@ -28,9 +28,30 @@
       <div
         class="card__sale-container d-flex justify-content-between align-center"
       >
-        <div class="card__more">
-          <i class="fas fa-plus"></i>
-        </div>
+        <ul class="card__more p-relative">
+          <li>
+            <label class="more-btn" for="show-modal" tabindex="0">
+              <i class="fas fa-plus"></i>
+            </label>
+            <input
+              type="checkbox"
+              class="more-input hidden"
+              name="modal"
+              id="show-modal"
+            />
+            <ul class="card__modal p-absolute hidden">
+              <li>
+                <a class="more__options-link d-block" href="#">Lorem, ipsum.</a>
+              </li>
+              <li>
+                <a class="more__options-link d-block" href="#">Lorem, ipsum.</a>
+              </li>
+              <li>
+                <a class="more__options-link d-block" href="#">Lorem, ipsum.</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
         <span class="price warning-color">200$</span>
       </div>
     </article>
