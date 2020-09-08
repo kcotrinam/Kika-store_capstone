@@ -3,6 +3,17 @@
 
   &__img-container {
     max-width: 150px;
+    position: relative;
+  }
+
+  &__arrow-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__arrow-container a {
+    padding: 1rem;
   }
 
   &__buttons-container {

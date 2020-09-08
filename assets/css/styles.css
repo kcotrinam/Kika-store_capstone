@@ -262,7 +262,14 @@ h6 {
 .horizontal-card {
   max-width: 500px; }
   .horizontal-card__img-container {
-    max-width: 150px; }
+    max-width: 150px;
+    position: relative; }
+  .horizontal-card__arrow-container {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .horizontal-card__arrow-container a {
+    padding: 1rem; }
   .horizontal-card__buttons-container {
     height: 100%;
     justify-self: end; }
