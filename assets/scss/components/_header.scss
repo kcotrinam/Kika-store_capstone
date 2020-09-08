@@ -30,7 +30,7 @@
   &__information {
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 5%;
     width: 100%;
     height: 100%;
     flex-direction: column;
@@ -45,19 +45,19 @@
 
   &__store-inf h2 {
     margin-top: 20px;
-    font-size: 2.5em;
+    font-size: clamp(1.5em, 10vw, 2.5em);
   }
 
   &__store-inf img {
-    width: 250px;
+    width: clamp(100px, 20vw, 250px);
   }
 
   &__search-container {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 
   &__search-container input {
-    width: 250px;
+    width: 20vw;
     height: 33px;
     border-radius: 4px;
     border: none;
