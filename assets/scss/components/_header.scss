@@ -41,6 +41,7 @@
 
   &__store-inf {
     flex-direction: column;
+    margin: auto;
   }
 
   &__store-inf h2 {
@@ -50,6 +51,7 @@
 
   &__store-inf img {
     width: clamp(100px, 20vw, 250px);
+    margin: inherit;
   }
 
   &__search-container {

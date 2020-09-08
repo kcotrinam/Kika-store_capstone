@@ -212,6 +212,9 @@ h6 {
 .hidden {
   display: none; }
 
+main {
+  margin-top: 1em; }
+
 .horizontal-card {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -221,7 +224,6 @@ h6 {
     grid-template-rows: 4fr 1fr; }
 
 .card {
-  max-width: 300px;
   background-color: mistyrose;
   padding: 1.2rem; }
   .card__title, .card__subtitle {
@@ -260,7 +262,7 @@ h6 {
   display: block; }
 
 .horizontal-card {
-  max-width: 500px; }
+  width: 100%; }
   .horizontal-card__img-container {
     max-width: 150px;
     position: relative; }
@@ -269,7 +271,7 @@ h6 {
     bottom: 0;
     right: 0; }
   .horizontal-card__arrow-container a {
-    padding: 1rem; }
+    padding: clamp(0.5rem, 10vw, 1em); }
   .horizontal-card__buttons-container {
     height: 100%;
     justify-self: end; }
@@ -328,12 +330,14 @@ h6 {
     align-items: center;
     color: white; }
   .header__store-inf {
-    flex-direction: column; }
+    flex-direction: column;
+    margin: auto; }
   .header__store-inf h2 {
     margin-top: 20px;
     font-size: clamp(1.5em, 10vw, 2.5em); }
   .header__store-inf img {
-    width: clamp(100px, 20vw, 250px); }
+    width: clamp(100px, 20vw, 250px);
+    margin: inherit; }
   .header__search-container {
     margin-top: 40px; }
   .header__search-container input {
@@ -362,3 +366,60 @@ h6 {
     margin-left: -300%; }
   100% {
     margin-left: -300%; } }
+
+.hotsale {
+  max-width: 500px;
+  margin: auto;
+  height: 220px;
+  overflow: hidden;
+  position: relative; }
+  .hotsale__title {
+    font-size: clamp(0.6em, 2vw, 1em);
+    color: rgba(179, 179, 179, 0.6);
+    margin-bottom: 0.5rem; }
+  .hotsale__slider {
+    position: relative; }
+  .hotsale__slider > * + * {
+    margin-left: 25px; }
+  .hotsale__slider {
+    width: 300%; }
+
+.showoffer1 {
+  margin-left: 20px; }
+
+.showoffer2 {
+  margin-left: 35px; }
+
+.showoffer1,
+.showoffer2,
+.showoffer3 {
+  display: none; }
+
+.showoffer1:checked ~ .hotsale__slider {
+  margin-left: 0; }
+
+.showoffer2:checked ~ .hotsale__slider {
+  margin-left: -102%; }
+
+.showoffer3:checked ~ .hotsale__slider {
+  margin-left: -202%; }
+
+.offer {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  z-index: 1000;
+  cursor: pointer; }
+
+.offer2 span {
+  margin-left: 20px; }
+
+.offer3 span {
+  margin-left: 40px; }
+
+.offer > span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #000; }

@@ -1,5 +1,5 @@
 .horizontal-card {
-  max-width: 500px;
+  width: 100%;
 
   &__img-container {
     max-width: 150px;
@@ -13,7 +13,7 @@
   }
 
   &__arrow-container a {
-    padding: 1rem;
+    padding: clamp(0.5rem, 10vw, 1em);
   }
 
   &__buttons-container {
