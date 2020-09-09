@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav
+        class="nav d-flex justify-content-between align-center bg-tertiary-color"
+      >
+        <div class="nav__logo-container">
+          <picture>
+            <source media="(min-width: 768px" srcset="assets/img/logo1.png" />
+            <img src="assets/img/logo2.png" alt="logo" />
+          </picture>
+        </div>
+        <ul class="nav__buttons d-flex align-center">
+          <li>
+            <a class="nav__buton" href="index.html">
+              <i class="fas fa-home"></i>
+              Home</a
+            >
+          </li>
+          <li>
+            <a class="nav__buton" href="#">
+              <i class="fas fa-box"></i>
+              Collections</a
+            >
+          </li>
+          <li>
+            <a class="nav__buton" href="#">
+              <i class="fas fa-shopping-cart"></i>
+              Purchase List</a
+            >
+          </li>
+          <li>
+            <a class="nav__buton btn bg-primary-color" href="#">Post an Ad</a>
+          </li>
+        </ul>
+        <div class="nav__login-container align-center hidden">
+          <span class="white-color"><i class="far fa-envelope"></i></span>
+          <p class="nav__profile-name white-color">Lorem ipsum</p>
+          <div class="nav__profile-pic">
+            <img src="assets/img/profile-picture.png" alt="profile picture" />
+          </div>
+        </div>
+      </nav>
+      <header class="header">
+        <div class="header__carrousel">
+          <ul class="d-flex">
+            <li><img src="assets/img/slide1.jpg" alt="" /></li>
+            <li><img src="assets/img/slide2.jpg" alt="" /></li>
+            <li><img src="assets/img/slide3.jpg" alt="" /></li>
+            <li><img src="assets/img/slide4.jpg" alt="" /></li>
+          </ul>
+        </div>
+        <div class="header__information d-flex">
+          <div class="header__store-inf">
+            <img src="assets/img/logo1.png" alt="" />
+            <h2>Homemade recepe</h2>
+          </div>
+          <div class="header__search-container">
+            <ul class="d-flex">
+              <li><input type="text" placeholder="All" /></li>
+              <li>
+                <input type="text" placeholder="What do you search for?" />
+              </li>
+              <li><input type="text" placeholder="search" /></li>
+              <li>
+                <a href="search.html" class="btn btn--search bg-tertiary-color">Search</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="main-content bg-body-alternative">
+        <div class="hidden search d-flex align-center">
+          <h2 class="search__title">FILTER</h2>
+          <form action="./search" class="search__form">
+            <fieldset class="d-flex">
+            <legend>Type</legend>
+            <label ><input type="checkbox">Small Group</label>
+            <label ><input type="checkbox">Medium Group</label>
+            <label ><input type="checkbox">Large Group</label>
+          </fieldset>
+          <fieldset class="d-flex">
+            <legend>Size</legend>
+            <label ><input type="checkbox">Small Group</label>
+            <label ><input type="checkbox">Medium Group</label>
+            <label ><input type="checkbox">Large Group</label>
+          </fieldset>
+          <fieldset class="d-flex">
+            <legend>Price Range</legend>
+            <label ><input type="checkbox">Small Group</label>
+            <label ><input type="checkbox">Medium Group</label>
+            <label ><input type="checkbox">Large Group</label>
+          </fieldset>
+          </form>
+        </div>
+        <div class="result">
+          <p class="result__info secondary-color">
+            500 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+          <section class="result__show-container">
+            <article class="card horizontal-card d-flex bg-body-alternative">
+              <div class="horizontal-card__img-container">
+                <img
+                  src="assets/img/result1.jpg"
+                  alt=""
+                />
+                <div class="horizontal-card__arrow-container">
+                  <a href="#" class="btn bg-tertiary-color left">
+                    <i class="fas fa-chevron-left primary-color"></i>
+                  </a>
+                  <a href="#" class="btn bg-tertiary-color right">
+                    <i class="fas fa-chevron-right primary-color"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="horizontal-card__right-container">
+                <div class="card__info">
+                  <div class="title d-flex align-center justify-content-between">
+                    <h2 class="card__title">Lorem, ipsum dolor.</h2>
+                    <span class="btn btn-add "><i class="fas fa-plus secondary-color"></i></span>
+                  </div>
+                  <h3 class="card__subtitle warning-color">New</h3>
+                  <p class="card__description">Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="horizontal-card__buttons-container">
+                  <a class="btn bg-primary-color href="#">button</a>
+                  <a class="btn bg-primary-color href="#">button2</a>
+                </div>
+              </div>
+            </article>
+            <article class="card horizontal-card d-flex bg-body-alternative">
+              <div class="horizontal-card__img-container">
+                <img
+                  src="assets/img/result2.jpg"
+                  alt=""
+                />
+                <div class="horizontal-card__arrow-container">
+                  <a href="#" class="btn bg-tertiary-color left">
+                    <i class="fas fa-chevron-left primary-color"></i>
+                  </a>
+                  <a href="#" class="btn bg-tertiary-color right">
+                    <i class="fas fa-chevron-right primary-color"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="horizontal-card__right-container">
+                <div class="card__info">
+                  <div class="title d-flex align-center justify-content-between">
+                    <h2 class="card__title">Lorem, ipsum dolor.</h2>
+                    <span class="btn btn-add "><i class="fas fa-plus secondary-color"></i></span>
+                  </div>
+                  <h3 class="card__subtitle warning-color">New</h3>
+                  <p class="card__description">Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="horizontal-card__buttons-container">
+                  <a class="btn bg-primary-color href="#">button</a>
+                  <a class="btn bg-primary-color href="#">button2</a>
+                </div>
+              </div>
+            </article>
+            <article class="card horizontal-card d-flex bg-body-alternative">
+              <div class="horizontal-card__img-container">
+                <img
+                  src="assets/img/result3.jpg"
+                  alt=""
+                />
+                <div class="horizontal-card__arrow-container">
+                  <a href="#" class="btn bg-tertiary-color left">
+                    <i class="fas fa-chevron-left primary-color"></i>
+                  </a>
+                  <a href="#" class="btn bg-tertiary-color right">
+                    <i class="fas fa-chevron-right primary-color"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="horizontal-card__right-container">
+                <div class="card__info">
+                  <div class="title d-flex align-center justify-content-between">
+                    <h2 class="card__title">Lorem, ipsum dolor.</h2>
+                    <span class="btn btn-add "><i class="fas fa-plus secondary-color"></i></span>
+                  </div>
+                  <h3 class="card__subtitle warning-color">New</h3>
+                  <p class="card__description">Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="horizontal-card__buttons-container">
+                  <a class="btn bg-primary-color href="#">button</a>
+                  <a class="btn bg-primary-color href="#">button2</a>
+                </div>
+              </div>
+            </article>
+            <article class="card horizontal-card d-flex bg-body-alternative">
+              <div class="horizontal-card__img-container">
+                <img
+                  src="assets/img/result4.jpg"
+                  alt="cake4"
+                />
+                <div class="horizontal-card__arrow-container">
+                  <a href="#" class="btn bg-tertiary-color left">
+                    <i class="fas fa-chevron-left primary-color"></i>
+                  </a>
+                  <a href="#" class="btn bg-tertiary-color right">
+                    <i class="fas fa-chevron-right primary-color"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="horizontal-card__right-container">
+                <div class="card__info">
+                  <div class="title d-flex align-center justify-content-between">
+                    <h2 class="card__title">Lorem, ipsum dolor.</h2>
+                    <span class="btn btn-add "><i class="fas fa-plus secondary-color"></i></span>
+                  </div>
+                  <h3 class="card__subtitle warning-color">New</h3>
+                  <p class="card__description">Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="horizontal-card__buttons-container">
+                  <a class="btn bg-primary-color href="#">button</a>
+                  <a class="btn bg-primary-color href="#">button2</a>
+                </div>
+              </div>
+            </article>
+            <article class="card horizontal-card d-flex bg-body-alternative">
+              <div class="horizontal-card__img-container">
+                <img
+                  src="assets/img/result5.jpg"
+                  alt="cake5"
+                />
+                <div class="horizontal-card__arrow-container">
+                  <a href="#" class="btn bg-tertiary-color left">
+                    <i class="fas fa-chevron-left primary-color"></i>
+                  </a>
+                  <a href="#" class="btn bg-tertiary-color right">
+                    <i class="fas fa-chevron-right primary-color"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="horizontal-card__right-container">
+                <div class="card__info">
+                  <div class="title d-flex align-center justify-content-between">
+                    <h2 class="card__title">Lorem, ipsum dolor.</h2>
+                    <span class="btn btn-add "><i class="fas fa-plus secondary-color"></i></span>
+                  </div>
+                  <h3 class="card__subtitle warning-color">New</h3>
+                  <p class="card__description">Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="horizontal-card__buttons-container">
+                  <a class="btn bg-primary-color href="#">button</a>
+                  <a class="btn bg-primary-color href="#">button2</a>
+                </div>
+              </div>
+            </article>
+            <article class="card horizontal-card d-flex bg-body-alternative">
+              <div class="horizontal-card__img-container">
+                <img
+                  src="assets/img/result6.jpg"
+                  alt="cake6"
+                />
+                <div class="horizontal-card__arrow-container">
+                  <a href="#" class="btn bg-tertiary-color left">
+                    <i class="fas fa-chevron-left primary-color"></i>
+                  </a>
+                  <a href="#" class="btn bg-tertiary-color right">
+                    <i class="fas fa-chevron-right primary-color"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="horizontal-card__right-container">
+                <div class="card__info">
+                  <div class="title d-flex align-center justify-content-between">
+                    <h2 class="card__title">Lorem, ipsum dolor.</h2>
+                    <span class="btn btn-add "><i class="fas fa-plus secondary-color"></i></span>
+                  </div>
+                  <h3 class="card__subtitle warning-color">New</h3>
+                  <p class="card__description">Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="horizontal-card__buttons-container">
+                  <a class="btn bg-primary-color href="#">button</a>
+                  <a class="btn bg-primary-color href="#">button2</a>
+                </div>
+              </div>
+            </article>
+
+            <div class="result__pages">
+              <ul class="d-flex justify-content-center">
+                <li class="d-flex justify-content-center align-center"><a href="#" class="result__pages-item">1</a></li>
+                <li class="d-flex justify-content-center align-center"><a href="#" class="result__pages-item ">2</a></li>
+                <li class="d-flex justify-content-center align-center"><a href="#" class="result__pages-item ">3</a></li>
+                <li class="d-flex justify-content-center align-center"><a href="#" class="result__pages-item ">4</a></li>
+                <li class="d-flex justify-content-center align-center"><a href="#" class="result__pages-item ">...</a></li>
+                <li class="d-flex justify-content-center align-center"><a href="#" class="result__pages-item ">7</a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__upper d-flex">
+          <div class="footer__left">
+            <img src="assets/img/logo1.png" alt="logo" class="footer__logo" />
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              eum saepe nihil aspernatur beatae quos alias nulla eos aut illum
+              accusamus, vitae quae blanditiis quam dicta quo distinctio non
+            </p>
+          </div>
+          <div class="footer__right">
+            <h2 class="footer__title primary-color">Categories</h2>
+            <div class="footer__category d-flex justify-content-between">
+              <ul>
+                <li class="footer__category-item">
+                  <a href="#">Real Estate</a>
+                </li>
+                <li class="footer__category-item">
+                  <a href="#">Automotives</a>
+                </li>
+                <li class="footer__category-item">
+                  <a href="#">Electronics</a>
+                </li>
+                <li class="footer__category-item"><a href="#">Clothing</a></li>
+                <li class="footer__category-item"><a href="#">Fashion</a></li>
+                <li class="footer__category-item"><a href="#">Kids</a></li>
+                <li class="footer__category-item"><a href="#">Food</a></li>
+              </ul>
+              <ul>
+                <li class="footer__category-item">
+                  <a href="#">Real Estate</a>
+                </li>
+                <li class="footer__category-item">
+                  <a href="#">Automotives</a>
+                </li>
+                <li class="footer__category-item">
+                  <a href="#">Electronics</a>
+                </li>
+                <li class="footer__category-item"><a href="#">Clothing</a></li>
+                <li class="footer__category-item"><a href="#">Fashion</a></li>
+                <li class="footer__category-item"><a href="#">Kids</a></li>
+                <li class="footer__category-item"><a href="#">Food</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            Cophyright© Zattix.com All Rights Reserved. Designed by Mohammed
+            Awad - Used for learning purposes only by Kevin Cotrina (Full Stack
+            dev)
+          </div>
+          <div class="footer__social">
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

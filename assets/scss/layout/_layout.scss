@@ -23,3 +23,28 @@ main {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+.main-content {
+  display: grid;
+  margin-top: 0;
+
+  @include from(sm) {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  @include from(lg) {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  @include from(xl) {
+    max-width: 70%;
+    margin: auto;
+  }
+}
+
+.search {
+  @include from(sm) {
+    display: flex;
+  }
+}

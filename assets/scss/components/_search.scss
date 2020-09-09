@@ -1,0 +1,74 @@
+.search {
+  flex-direction: column;
+
+  &__title {
+    border-bottom: 1px solid $border-color;
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+  }
+
+  &__form fieldset {
+    margin-top: 2.5rem;
+  }
+
+  &__form legend {
+    border-bottom: 1px solid $border-color;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 0.5rem;
+  }
+
+  &__form label {
+    margin-top: 1.5rem;
+    font-size: 13px;
+  }
+
+  & fieldset {
+    flex-direction: column;
+  }
+}
+
+.result {
+  padding: 0 0.5rem;
+  &__info {
+    font-size: 11px;
+    padding: 0.9rem;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__show-container > .horizontal-card {
+    margin-top: 1.2rem;
+    border: 1px solid $border-color;
+  }
+
+  &__pages ul {
+    padding: 2rem 0 1.2rem 0;
+  }
+
+  &__pages li:not(:nth-child(5)) {
+    border: 1px solid #000;
+  }
+
+  &__pages li {
+    margin-right: 0.8em;
+  }
+
+  &__pages li:not(:nth-child(5)) a {
+    display: block;
+    font-size: 11px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+  }
+}
