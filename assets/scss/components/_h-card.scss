@@ -6,8 +6,9 @@
   width: 100%;
 
   &__img-container {
-    max-width: 150px;
+    max-width: 100%;
     position: relative;
+    max-height: 200px;
   }
 
   &__arrow-container {

@@ -240,14 +240,20 @@ main {
 
 .carrousel__slide1,
 .carrousel__slide2,
-.carrousel__slide3 {
+.carrousel__slide3,
+.carrousel__slide4,
+.carrousel__slide5,
+.carrousel__slide6 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 10px; }
   @media screen and (min-width: 768px) {
     .carrousel__slide1,
     .carrousel__slide2,
-    .carrousel__slide3 {
+    .carrousel__slide3,
+    .carrousel__slide4,
+    .carrousel__slide5,
+    .carrousel__slide6 {
       grid-template-columns: repeat(4, 1fr); } }
 
 .main-content {
@@ -277,6 +283,8 @@ main {
       height: clamp(100px, 10vw, 200px); }
   .card__title, .card__subtitle {
     font-weight: 200; }
+  .card__info {
+    margin-top: 5px; }
   .card__info > * + * {
     margin-top: 0.5rem; }
   .card__more {
@@ -314,8 +322,9 @@ main {
 .horizontal-card {
   width: 100%; }
   .horizontal-card__img-container {
-    max-width: 150px;
-    position: relative; }
+    max-width: 100%;
+    position: relative;
+    max-height: 200px; }
   .horizontal-card__arrow-container {
     position: absolute;
     bottom: 0;
@@ -496,7 +505,8 @@ main {
     margin: auto; }
     @media screen and (min-width: 768px) {
       .carrousel .slide-container {
-        max-width: 80%; } }
+        max-width: 80%;
+        height: 400px; } }
   .carrousel__prev, .carrousel__next {
     position: absolute;
     top: 50%;
@@ -569,11 +579,12 @@ main {
   .footer__category > * + * {
     margin-left: 28px; }
   .footer__logo {
-    width: 10vw;
+    width: 7vw;
     height: 5vh;
     margin: 0 auto 1.2rem; }
   .footer__category a, .footer__description {
-    font-size: clamp(11px, 2vw, 1rem); }
+    font-size: clamp(11px, 2vw, 12px);
+    line-height: 20px; }
   .footer__bottom {
     margin-top: 1.7em;
     padding: 0.8rem 0;

@@ -29,14 +29,15 @@
   }
 
   &__logo {
-    width: 10vw;
+    width: 7vw;
     height: 5vh;
     margin: 0 auto 1.2rem;
   }
 
   &__category a,
   &__description {
-    font-size: clamp(11px, 2vw, 1rem);
+    font-size: clamp(11px, 2vw, 12px);
+    line-height: 20px;
   }
 
   &__bottom {

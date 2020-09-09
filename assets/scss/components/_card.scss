@@ -14,6 +14,10 @@
     font-weight: 200;
   }
 
+  &__info {
+    margin-top: 5px;
+  }
+
   &__info > * + * {
     margin-top: 0.5rem;
   }

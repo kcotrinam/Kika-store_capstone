@@ -15,7 +15,10 @@ main {
 
 .carrousel__slide1,
 .carrousel__slide2,
-.carrousel__slide3 {
+.carrousel__slide3,
+.carrousel__slide4,
+.carrousel__slide5,
+.carrousel__slide6 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 10px;
