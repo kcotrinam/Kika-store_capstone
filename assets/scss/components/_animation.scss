@@ -28,3 +28,12 @@
     transform: scale(1.2);
   }
 }
+
+.an-color {
+  transition: color 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}

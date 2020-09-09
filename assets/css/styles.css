@@ -680,3 +680,9 @@ main {
   cursor: pointer; }
   .scale-md:hover {
     transform: scale(1.2); }
+
+.an-color {
+  transition: color 0.2s;
+  cursor: pointer; }
+  .an-color:hover {
+    color: var(--primary-color); }
