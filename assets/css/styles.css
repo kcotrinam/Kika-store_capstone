@@ -354,6 +354,8 @@ main {
     background: #c13147; }
   .nav__login-container > * + * {
     margin-left: 0.9rem; }
+  .nav__profile-pic {
+    cursor: pointer; }
   .nav__profile-pic img {
     width: 40px;
     border-radius: 50%; }
@@ -657,3 +659,24 @@ main {
     .result__pages li:not(:nth-child(5)) a:hover {
       background-color: var(--primary-color);
       color: #fff; }
+
+.rotatex-180 {
+  transition: transform 0.5s; }
+  .rotatex-180:hover {
+    transform: rotateY(180deg); }
+
+.rotate-360 {
+  transition: transform 0.5s; }
+  .rotate-360:hover {
+    transform: rotate(360deg); }
+
+.scale-sm {
+  transition: scale 0.2s; }
+  .scale-sm:hover {
+    transform: scale(1.1); }
+
+.scale-md {
+  transition: scale 0.2s;
+  cursor: pointer; }
+  .scale-md:hover {
+    transform: scale(1.2); }

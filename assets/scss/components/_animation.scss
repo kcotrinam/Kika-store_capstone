@@ -1,0 +1,30 @@
+.rotatex-180 {
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: rotateY(180deg);
+  }
+}
+
+.rotate-360 {
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: rotate(360deg);
+  }
+}
+
+.scale-sm {
+  transition: scale 0.2s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.scale-md {
+  transition: scale 0.2s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
