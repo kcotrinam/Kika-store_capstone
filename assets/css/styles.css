@@ -432,62 +432,52 @@ main {
   100% {
     margin-left: -300%; } }
 
-.hotsale {
-  max-width: 500px;
-  margin: auto;
-  height: 220px;
-  overflow: hidden;
-  position: relative; }
-  .hotsale__title {
-    font-size: clamp(0.6em, 2vw, 1em);
-    color: rgba(179, 179, 179, 0.6);
-    margin-bottom: 0.5rem; }
-  .hotsale__slider {
-    position: relative; }
-  .hotsale__slider > * + * {
-    margin-left: 25px; }
-  .hotsale__slider {
-    width: 300%; }
+.hotsale__title {
+  font-size: clamp(0.6em, 2vw, 1em);
+  color: rgba(179, 179, 179, 0.6);
+  margin-bottom: 0.5rem;
+  margin: auto; }
+  @media screen and (min-width: 768px) {
+    .hotsale__title {
+      max-width: 75%; } }
 
-.showoffer1 {
-  margin-left: 20px; }
+.hotsale__slider {
+  min-height: 300px;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .hotsale__slider {
+      max-width: 60%;
+      height: 300px;
+      margin: auto; } }
+  .hotsale__slider .hot1,
+  .hotsale__slider .hot2,
+  .hotsale__slider .hot3 {
+    height: 80%; }
 
-.showoffer2 {
-  margin-left: 35px; }
+.hotsale__bullets {
+  position: relative;
+  z-index: 100;
+  align-self: flex-end;
+  padding-bottom: 70px; }
 
-.showoffer1,
-.showoffer2,
-.showoffer3 {
-  display: none; }
-
-.showoffer1:checked ~ .hotsale__slider {
-  margin-left: 0; }
-
-.showoffer2:checked ~ .hotsale__slider {
-  margin-left: -102%; }
-
-.showoffer3:checked ~ .hotsale__slider {
-  margin-left: -202%; }
-
-.offer {
-  position: absolute;
-  bottom: 0;
-  left: 45%;
-  z-index: 1000;
-  cursor: pointer; }
-
-.offer2 span {
-  margin-left: 20px; }
-
-.offer3 span {
-  margin-left: 40px; }
-
-.offer > span {
+.hotsale__bullets span {
   display: block;
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 1px solid #000; }
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  margin-right: 0.5rem;
+  cursor: pointer; }
+
+#slide1:checked ~ .hot1,
+#slide2:checked ~ .hot2,
+#slide3:checked ~ .hot3 {
+  z-index: 10; }
+
+#slide1:checked ~ .hotsale__bullets .bullet1 span,
+#slide2:checked ~ .hotsale__bullets .bullet2 span,
+#slide3:checked ~ .hotsale__bullets .bullet3 span {
+  background-color: var(--primary-color); }
 
 .birthday {
   margin-top: 30px; }

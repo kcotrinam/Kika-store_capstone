@@ -1,75 +1,58 @@
 .hotsale {
-  max-width: 500px;
-  margin: auto;
-  height: 220px;
-  overflow: hidden;
-  position: relative;
-
   &__title {
     font-size: clamp(0.6em, 2vw, 1em);
     color: hsla(0, 0, 70%, 0.6);
     margin-bottom: 0.5rem;
+    margin: auto;
+
+    @include from(md) {
+      max-width: 75%;
+    }
   }
 
   &__slider {
+    min-height: 300px;
+    width: 100%;
+
+    @include from(md) {
+      max-width: 60%;
+      height: 300px;
+      margin: auto;
+    }
+
+    & .hot1,
+    & .hot2,
+    & .hot3 {
+      height: 80%;
+    }
+  }
+
+  &__bullets {
     position: relative;
+    z-index: 100;
+    align-self: flex-end;
+    padding-bottom: 70px;
   }
 
-  &__slider > * + * {
-    margin-left: 25px;
+  &__bullets span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid $border-color;
+    margin-right: 0.5rem;
+    cursor: pointer;
   }
-
-  &__slider {
-    width: 300%;
-  }
 }
 
-.showoffer1 {
-  margin-left: 20px;
+#slide1:checked ~ .hot1,
+#slide2:checked ~ .hot2,
+#slide3:checked ~ .hot3 {
+  z-index: 10;
 }
 
-.showoffer2 {
-  margin-left: 35px;
-}
-
-.showoffer1,
-.showoffer2,
-.showoffer3 {
-  display: none;
-}
-
-.showoffer1:checked ~ .hotsale__slider {
-  margin-left: 0;
-}
-
-.showoffer2:checked ~ .hotsale__slider {
-  margin-left: -102%;
-}
-
-.showoffer3:checked ~ .hotsale__slider {
-  margin-left: -202%;
-}
-
-.offer {
-  position: absolute;
-  bottom: 0;
-  left: 45%;
-  z-index: 1000;
-  cursor: pointer;
-}
-
-.offer2 span {
-  margin-left: 20px;
-}
-
-.offer3 span {
-  margin-left: 40px;
-}
-
-.offer > span {
-  display: block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 1px solid #000;
+#slide1:checked ~ .hotsale__bullets .bullet1 span,
+#slide2:checked ~ .hotsale__bullets .bullet2 span,
+#slide3:checked ~ .hotsale__bullets .bullet3 span {
+  background-color: var(--primary-color);
 }

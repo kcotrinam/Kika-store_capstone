@@ -91,19 +91,15 @@
       <main>
         <section class="hotsale">
           <h2 class="hotsale__title">Hot ads</h2>
-          <input type="checkbox" class="showoffer1" id="sale1" checked />
-          <input type="checkbox" class="showoffer2" id="sale2" unchecked />
-          <input type="checkbox" class="showoffer3" id="sale3" required />
-          <label class="offer offer1" for="sale1"><span></span></label>
-          <label class="offer offer2" for="sale2"><span></span></label>
-          <label class="offer offer3" for="sale3"><span></span></label>
-          <div class="hotsale__slider d-flex">
-            <article class="card horizontal-card d-flex hotsale__offer1">
+          <div class="hotsale__slider p-relative d-flex justify-content-center">
+            <input type="radio" name="hotsale" id="slide1" checked />
+            <input type="radio" name="hotsale" id="slide2" />
+            <input type="radio" name="hotsale" id="slide3" />
+            <article
+              class="card horizontal-card d-flex p-absolute hot1 bg-white-color"
+            >
               <div class="horizontal-card__img-container">
-                <img
-                  src="https://images.ctfassets.net/od02wyo8cgm5/5kpFyd0r2uP97j7TIwahLc/49be548876c61e93ac58efab04906d5f/cloud_waterproof_2-fw19-black_lunar-w-g1.png"
-                  alt=""
-                />
+                <img src="assets/img/pic1.jpeg" alt="" />
                 <div class="horizontal-card__arrow-container">
                   <a href="#" class="btn bg-tertiary-color left">
                     <i class="fas fa-chevron-left primary-color"></i>
@@ -115,8 +111,8 @@
               </div>
               <div class="horizontal-card__right-container">
                 <div class="card__info">
-                  <h2 class="card__title">Lorem, ipsum dolor.</h2>
-                  <h3 class="card__subtitle warning-color">New</h3>
+                  <h2 class="card__title">yo, ipsum dolor.</h2>
+                  <h3 class="card__subtitle warning-color">old</h3>
                   <p class="card__description">Lorem ipsum dolor sit.</p>
                 </div>
                 <div class="horizontal-card__buttons-container">
@@ -125,12 +121,11 @@
                 </div>
               </div>
             </article>
-            <article class="card horizontal-card d-flex hotsale__offer2">
+            <article
+              class="card horizontal-card d-flex p-absolute hot2 bg-white-color"
+            >
               <div class="horizontal-card__img-container">
-                <img
-                  src="https://images.ctfassets.net/od02wyo8cgm5/5kpFyd0r2uP97j7TIwahLc/49be548876c61e93ac58efab04906d5f/cloud_waterproof_2-fw19-black_lunar-w-g1.png"
-                  alt=""
-                />
+                <img src="assets/img/pic2.jpeg" alt="" />
                 <div class="horizontal-card__arrow-container">
                   <a href="#" class="btn bg-tertiary-color left">
                     <i class="fas fa-chevron-left primary-color"></i>
@@ -142,7 +137,7 @@
               </div>
               <div class="horizontal-card__right-container">
                 <div class="card__info">
-                  <h2 class="card__title">Lorem, ipsum dolor.</h2>
+                  <h2 class="card__title">car, ipsum dolor.</h2>
                   <h3 class="card__subtitle warning-color">New</h3>
                   <p class="card__description">Lorem ipsum dolor sit.</p>
                 </div>
@@ -152,12 +147,11 @@
                 </div>
               </div>
             </article>
-            <article class="card horizontal-card d-flex hotsale__offer3">
+            <article
+              class="card horizontal-card d-flex p-absolute hot3 bg-white-color"
+            >
               <div class="horizontal-card__img-container">
-                <img
-                  src="https://images.ctfassets.net/od02wyo8cgm5/5kpFyd0r2uP97j7TIwahLc/49be548876c61e93ac58efab04906d5f/cloud_waterproof_2-fw19-black_lunar-w-g1.png"
-                  alt=""
-                />
+                <img src="assets/img/pic3.jpeg" alt="" />
                 <div class="horizontal-card__arrow-container">
                   <a href="#" class="btn bg-tertiary-color left">
                     <i class="fas fa-chevron-left primary-color"></i>
@@ -169,7 +163,7 @@
               </div>
               <div class="horizontal-card__right-container">
                 <div class="card__info">
-                  <h2 class="card__title">Lorem, ipsum dolor.</h2>
+                  <h2 class="card__title">trailer, ipsum dolor.</h2>
                   <h3 class="card__subtitle warning-color">New</h3>
                   <p class="card__description">Lorem ipsum dolor sit.</p>
                 </div>
@@ -179,6 +173,11 @@
                 </div>
               </div>
             </article>
+            <div class="hotsale__bullets d-flex">
+              <label class="bullet1" for="slide1"><span></span></label>
+              <label class="bullet2" for="slide2"><span></span></label>
+              <label class="bullet3" for="slide3"><span></span></label>
+            </div>
           </div>
         </section>
 
