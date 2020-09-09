@@ -319,7 +319,8 @@ main {
 
 .horizontal-card {
   width: 100%; }
-  .horizontal-card__img-container {
+  .horizontal-card__img-container,
+  .horizontal-card__img-container img {
     max-width: 100%;
     position: relative;
     max-height: 200px; }

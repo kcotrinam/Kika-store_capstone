@@ -5,7 +5,8 @@
 .horizontal-card {
   width: 100%;
 
-  &__img-container {
+  &__img-container,
+  &__img-container img {
     max-width: 100%;
     position: relative;
     max-height: 200px;
