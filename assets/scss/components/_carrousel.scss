@@ -1,0 +1,89 @@
+.birthday {
+  margin-top: 30px;
+  &__title {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+.carrousel {
+  width: 100%;
+  height: 300px;
+  padding: 0 0.8em 0.8em;
+  position: relative;
+  overflow: hidden;
+
+  & .slide-container {
+    justify-content: space-evenly;
+    position: relative;
+    margin: auto;
+
+    @include from(md) {
+      max-width: 80%;
+    }
+  }
+
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+  }
+
+  &__prev {
+    left: 0;
+  }
+
+  &__next {
+    right: 0;
+  }
+}
+
+.slide-container {
+  width: 100%;
+}
+
+.slide-item2 {
+  @include from(md) {
+    display: block;
+  }
+}
+
+#s1,
+#s2,
+#s3,
+#s4,
+#s5,
+#s6 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#s3 {
+  margin-left: 100px;
+}
+#s2 {
+  margin-left: 50px;
+}
+
+.carrousel__slide1,
+.carrousel__slide2,
+.carrousel__slide3,
+.carrousel__slide4,
+.carrousel__slide5,
+.carrousel__slide6 {
+  position: absolute;
+}
+
+#s1:checked ~ .carrousel__slide1,
+#s2:checked ~ .carrousel__slide2,
+#s3:checked ~ .carrousel__slide3,
+#s4:checked ~ .carrousel__slide4,
+#s5:checked ~ .carrousel__slide5,
+#s6:checked ~ .carrousel__slide6 {
+  z-index: 10;
+  transition: all 2s;
+}

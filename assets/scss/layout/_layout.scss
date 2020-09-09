@@ -12,3 +12,14 @@ main {
     grid-template-rows: 4fr 1fr;
   }
 }
+
+.carrousel__slide1,
+.carrousel__slide2,
+.carrousel__slide3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include from(md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
