@@ -8,6 +8,7 @@
 
 - HTML5
 - CSS3
+-SCSS
 
 ## Video Demo
 
