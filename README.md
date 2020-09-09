@@ -9,6 +9,10 @@
 - HTML5
 - CSS3
 
+## Video Demo
+
+[Video Demo Link](https://www.loom.com/share/78237226bba145d882443d9fca133f07)
+
 ## Live Demo
 
 [Live Demo Link](https://kcotrinam92.github.io/store_capstone/)
