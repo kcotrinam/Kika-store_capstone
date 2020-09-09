@@ -1,0 +1,75 @@
+.footer {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  width: 100%;
+
+  @include from(md) {
+    width: 80%;
+    margin: 1.8rem auto;
+  }
+
+  &__upper {
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  &__left {
+    width: 50%;
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid red;
+  }
+
+  &__category > * + * {
+    margin-left: 28px;
+  }
+
+  &__logo {
+    width: 10vw;
+    height: 5vh;
+    margin: 0 auto 1.2rem;
+  }
+
+  &__category a,
+  &__description {
+    font-size: clamp(11px, 2vw, 1rem);
+  }
+
+  &__bottom {
+    margin-top: 1.7em;
+    padding: 0.8rem 0;
+    border-top: 3px solid black;
+
+    @include from(sm) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__copyright {
+    font-size: 11px;
+  }
+
+  &__social {
+    margin-top: 0.5rem;
+    & a {
+      font-size: 1.5rem;
+      margin-right: 1.2rem;
+    }
+
+    @include from(sm) {
+      display: flex;
+      margin-top: 0;
+    }
+  }
+
+  @include from(sm) {
+    &__copyright {
+      width: 50%;
+    }
+  }
+}
