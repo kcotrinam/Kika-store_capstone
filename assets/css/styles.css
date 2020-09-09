@@ -242,7 +242,8 @@ main {
 .carrousel__slide2,
 .carrousel__slide3 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px; }
   @media screen and (min-width: 768px) {
     .carrousel__slide1,
     .carrousel__slide2,
@@ -387,7 +388,7 @@ main {
     margin: auto; }
   .header__store-inf h2 {
     margin-top: 20px;
-    font-size: clamp(1.5em, 10vw, 2.5em); }
+    font-size: clamp(1.5em, 7vw, 2.5em); }
   .header__store-inf img {
     width: clamp(100px, 20vw, 250px);
     margin: inherit; }
