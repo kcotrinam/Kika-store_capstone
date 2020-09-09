@@ -539,7 +539,8 @@ main {
 .carrousel__slide4,
 .carrousel__slide5,
 .carrousel__slide6 {
-  position: absolute; }
+  position: absolute;
+  width: 100%; }
 
 #s1:checked ~ .carrousel__slide1,
 #s2:checked ~ .carrousel__slide2,
