@@ -1,8 +1,7 @@
 .hotsale {
   &__title {
     font-size: clamp(0.6em, 2vw, 1em);
-    color: hsla(0, 0, 70%, 0.6);
-    margin-bottom: 0.5rem;
+    color: hsla(0, 0%, 70%, 0.6);
     margin: auto;
 
     @include from(md) {

@@ -3,16 +3,13 @@
   left: 0;
   background: wheat;
 
-  & li:not(:last-child) a {
-    border-bottom: 1px solid black;
-  }
-
   & a {
     padding: 0.25rem 0.25rem 0.75rem 0.25rem;
     min-width: 200px;
-    &:hover {
-      background: darken(wheat, 50);
-    }
+  }
+
+  & li:not(:last-child) a {
+    border-bottom: 1px solid black;
   }
 }
 

@@ -146,7 +146,7 @@ a {
   src: url("gotham-rounded-light.otf"); }
 
 body {
-  font-family: "gotham-rounded-light"; }
+  font-family: "gotham-rounded-light", Arial, Helvetica, sans-serif; }
 
 h1,
 h2,
@@ -154,7 +154,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Gotham-Bold"; }
+  font-family: "Gotham-Bold", Arial, Helvetica, sans-serif; }
 
 :root {
   --primary-color: #d35266;
@@ -288,7 +288,7 @@ main {
   .card__info > * + * {
     margin-top: 0.5rem; }
   .card__more {
-    border: 1px solid #b3b3b3;
+    border: 1px solid rgba(128, 128, 128, 0.5);
     padding: 0.25rem; }
 
 .btn {
@@ -305,13 +305,11 @@ main {
   bottom: 23px;
   left: 0;
   background: wheat; }
-  .card__modal li:not(:last-child) a {
-    border-bottom: 1px solid black; }
   .card__modal a {
     padding: 0.25rem 0.25rem 0.75rem 0.25rem;
     min-width: 200px; }
-    .card__modal a:hover {
-      background: #956814; }
+  .card__modal li:not(:last-child) a {
+    border-bottom: 1px solid black; }
 
 .more-input:checked ~ .card__modal {
   display: block; }
@@ -336,7 +334,7 @@ main {
     justify-self: end; }
 
 .btn-add {
-  border: 1px solid rgba(204, 204, 204, 0.8);
+  border: 1px solid rgba(128, 128, 128, 0.5);
   padding: 0.5em; }
 
 .nav {
@@ -435,7 +433,6 @@ main {
 .hotsale__title {
   font-size: clamp(0.6em, 2vw, 1em);
   color: rgba(179, 179, 179, 0.6);
-  margin-bottom: 0.5rem;
   margin: auto; }
   @media screen and (min-width: 768px) {
     .hotsale__title {
@@ -491,10 +488,14 @@ main {
   padding: 0 0.8em 0.8em;
   position: relative;
   overflow: hidden; }
+  @media screen and (min-width: 1300px) {
+    .carrousel {
+      height: 350px; } }
   .carrousel .slide-container {
     justify-content: space-evenly;
     position: relative;
-    margin: auto; }
+    margin: auto;
+    width: 100%; }
     @media screen and (min-width: 768px) {
       .carrousel .slide-container {
         max-width: 80%;
@@ -507,9 +508,6 @@ main {
     left: 0; }
   .carrousel__next {
     right: 0; }
-
-.slide-container {
-  width: 100%; }
 
 @media screen and (min-width: 768px) {
   .slide-item2 {
@@ -633,12 +631,11 @@ main {
     border: 1px solid rgba(128, 128, 128, 0.5); }
   .result__pages ul {
     padding: 2rem 0 1.2rem 0; }
-  .result__pages li:not(:nth-child(5)) {
-    border: 1px solid #000; }
   .result__pages li {
     margin-right: 0.8em; }
+  .result__pages li:not(:nth-child(5)) {
+    border: 1px solid #000; }
   .result__pages li:not(:nth-child(5)) a {
-    display: block;
     font-size: 11px;
     width: 20px;
     height: 20px;

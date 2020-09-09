@@ -5,6 +5,7 @@
     width: clamp(30px, 10vw, 90px);
     height: clamp(30px, 10vw, 45px);
   }
+
   &__buttons li:not(:last-child) a {
     color: #fff;
     font-size: clamp(0.6em, 2vw, 1em);
@@ -14,6 +15,7 @@
       color: var(--primary-color);
     }
   }
+
   &__buttons li:last-child a:hover {
     background: darken(#d35266, 10);
   }
@@ -33,6 +35,7 @@
 
   @include from(md) {
     justify-content: space-around;
+    
     &__login-container {
       display: flex;
     }

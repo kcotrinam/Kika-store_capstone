@@ -16,6 +16,7 @@
 
 .scale-sm {
   transition: scale 0.2s;
+
   &:hover {
     transform: scale(1.1);
   }
@@ -24,6 +25,7 @@
 .scale-md {
   transition: scale 0.2s;
   cursor: pointer;
+
   &:hover {
     transform: scale(1.2);
   }
