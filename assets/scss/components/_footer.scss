@@ -36,8 +36,12 @@
 
   &__category a,
   &__description {
-    font-size: clamp(11px, 2vw, 12px);
-    line-height: 20px;
+    font-size: 0.5rem;
+    line-height: 15px;
+
+    @include from(md) {
+      font-size: 0.8rem;
+    }
   }
 
   &__bottom {

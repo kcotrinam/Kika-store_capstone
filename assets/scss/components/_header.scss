@@ -40,12 +40,16 @@
 
   &__store-inf {
     flex-direction: column;
-    margin: 0 auto .9rem;
+    margin: 0 auto 0.9rem;
   }
 
   &__store-inf h2 {
     margin-top: 20px;
-    font-size: clamp(1.5em, 7vw, 2.5em);
+    font-size: 4vw;
+
+    @include from(xl) {
+      font-size: 40px;
+    }
   }
 
   &__store-inf img {

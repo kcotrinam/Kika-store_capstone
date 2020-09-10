@@ -2,14 +2,22 @@
   padding: 1rem 0.5rem;
 
   &__logo-container img {
-    max-width: 10vw;
+    max-width: 7vw;
     max-height: 45px;
   }
 
   &__buttons li:not(:last-child) a {
     color: #fff;
-    font-size: clamp(0.6em, 2vw, 1em);
+    font-size: 0.6em;
     padding: 0.6em;
+
+    @include from(640px) {
+      font-size: 0.9em;
+    }
+
+    @include from(md) {
+      font-size: 1em;
+    }
 
     &:hover {
       color: var(--primary-color);
@@ -35,7 +43,7 @@
 
   @include from(md) {
     justify-content: space-around;
-    
+
     &__login-container {
       display: flex;
     }
