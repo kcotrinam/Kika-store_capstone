@@ -320,7 +320,8 @@ h6 {
   cursor: pointer; }
 
 .horizontal-card {
-  width: 100%; }
+  width: 100%;
+  padding: .5rem; }
   .horizontal-card__img-container,
   .horizontal-card__img-container img {
     max-width: 100%;
@@ -412,7 +413,7 @@ h6 {
     border-radius: 4px;
     border: none;
     margin-right: 0.5rem; }
-  .header__search-container li:last-child a {
+  .header__search-container a {
     padding: 0.8rem; }
 
 @keyframes rotate {
@@ -623,33 +624,36 @@ h6 {
   .search fieldset {
     flex-direction: column; }
 
-.result {
-  padding: 0 0.5rem; }
-  .result__info {
-    font-size: 11px;
-    padding: 0.9rem;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.5); }
-  .result__show-container > .horizontal-card {
-    margin-top: 1.2rem;
-    border: 1px solid rgba(128, 128, 128, 0.5); }
-  .result__pages ul {
-    padding: 2rem 0 1.2rem 0; }
-  .result__pages li {
-    margin-right: 0.8em; }
-  .result__pages li:not(:nth-child(5)) {
-    border: 1px solid #000; }
-  .result__pages li:not(:nth-child(5)) a {
-    font-size: 11px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .result__pages li:not(:nth-child(5)) a:hover {
-      background-color: var(--primary-color);
-      color: #fff; }
+.result__info {
+  font-size: 11px;
+  padding: 0.9rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5); }
+
+.result__show-container > .horizontal-card {
+  margin-top: 1.2rem;
+  border: 1px solid rgba(128, 128, 128, 0.5); }
+
+.result__pages ul {
+  padding: 2rem 0 1.2rem 0; }
+
+.result__pages li {
+  margin-right: 0.8em; }
+
+.result__pages li:not(:nth-child(5)) {
+  border: 1px solid #000; }
+
+.result__pages li:not(:nth-child(5)) a {
+  font-size: 11px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .result__pages li:not(:nth-child(5)) a:hover {
+    background-color: var(--primary-color);
+    color: #fff; }
 
 .rotatex-180 {
   transition: transform 0.5s; }
