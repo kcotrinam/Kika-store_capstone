@@ -1,6 +1,10 @@
+main {
+  margin-top: 5rem;
+}
+
 .card {
   display: grid;
-  grid-template-rows: 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .horizontal-card {
@@ -25,6 +29,10 @@
   column-gap: 10px;
 
   @include from(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include from(xl) {
     grid-template-columns: repeat(4, 1fr);
   }
 }
