@@ -14,7 +14,7 @@
 - Lighthouse and StyleLinters.
 - W3 HTML Validator
 
-## Video Demo
+## :video_camera: Video Demo
 
 [Video Demo Link](https://www.loom.com/share/78237226bba145d882443d9fca133f07)
 
