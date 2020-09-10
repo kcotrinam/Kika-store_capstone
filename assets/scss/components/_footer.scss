@@ -32,6 +32,10 @@
     width: 7vw;
     height: 5vh;
     margin: 0 auto 1.2rem;
+
+    @include from(md) {
+      height: 10vh;
+    }
   }
 
   &__category a,

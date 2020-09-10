@@ -586,6 +586,9 @@ h6 {
     width: 7vw;
     height: 5vh;
     margin: 0 auto 1.2rem; }
+    @media screen and (min-width: 768px) {
+      .footer__logo {
+        height: 10vh; } }
   .footer__category a, .footer__description {
     font-size: 0.5rem;
     line-height: 15px; }
