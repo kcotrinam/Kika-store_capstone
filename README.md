@@ -16,7 +16,7 @@
 
 ## :video_camera: Video Demo
 
-[Video Demo Link](https://www.loom.com/share/78237226bba145d882443d9fca133f07)
+[Video Demo Link](https://www.loom.com/share/f4565b4a2edc4fc0b45e6c6ad745a664)
 
 ## :red_circle: Live Demo:
 
@@ -37,7 +37,6 @@ To get a local copy up and running follow these simple steps:
 - Github: [@githubhandle](https://github.com/kcotrinam92)
 - Twitter: [@twitterhandle](https://twitter.com/KevinCot12)
 - Linkedin: [linkedin](https://www.linkedin.com/in/kevin-cotrina-6208b7149/)
-
 
 ## 🤝 :raised_hand: :raised_hand: Contributions
 
