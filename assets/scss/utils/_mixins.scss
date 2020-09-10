@@ -4,6 +4,7 @@
       @content;
     }
   }
+
   @else if type-of($breakpoint) == "number" and unit($breakpoint) == "px" {
     @media screen and (min-width: $breakpoint) {
       @content;

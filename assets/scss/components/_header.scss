@@ -49,7 +49,9 @@
   }
 
   &__store-inf img {
-    width: clamp(100px, 20vw, 250px);
+    width: 20vw;
+    max-width: 200px;
+    max-height: 100px;
     margin: inherit;
   }
 
