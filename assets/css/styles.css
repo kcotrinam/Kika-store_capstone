@@ -504,6 +504,14 @@ h6 {
   @media screen and (min-width: 1300px) {
     .carrousel {
       height: 350px; } }
+  .carrousel .card {
+    min-height: 300px; }
+    @media screen and (min-width: 821px) {
+      .carrousel .card {
+        height: 350px; } }
+    @media screen and (min-width: 1024px) {
+      .carrousel .card {
+        height: 400px; } }
   .carrousel .slide-container {
     justify-content: space-evenly;
     position: relative;

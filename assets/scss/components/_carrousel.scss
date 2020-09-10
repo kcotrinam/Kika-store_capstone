@@ -18,6 +18,18 @@
     height: 350px;
   }
 
+  & .card {
+    min-height: 300px;
+
+    @include from(821px) {
+      height: 350px;
+    }
+
+    @include from(lg) {
+      height: 400px;
+    }
+  }
+
   & .slide-container {
     justify-content: space-evenly;
     position: relative;
