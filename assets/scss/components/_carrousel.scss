@@ -48,7 +48,7 @@
 
 .slide-item2 {
   @include from(md) {
-    display: block;
+    display: grid;
   }
 }
 

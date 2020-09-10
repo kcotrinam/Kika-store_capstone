@@ -5,6 +5,11 @@
     width: 100%;
   }
 
+  &__img-container img {
+    object-fit: cover;
+    max-height: 163px;
+  }
+
   &__title,
   &__subtitle {
     font-weight: 200;

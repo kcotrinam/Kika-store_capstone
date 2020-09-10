@@ -227,8 +227,9 @@ h6 {
 .hidden {
   display: none; }
 
-main {
-  margin-top: 1em; }
+.card {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr; }
 
 .horizontal-card {
   display: grid;
@@ -279,6 +280,9 @@ main {
   padding: 1.2rem; }
   .card__img-container {
     width: 100%; }
+  .card__img-container img {
+    object-fit: cover;
+    max-height: 163px; }
   .card__title, .card__subtitle {
     font-weight: 200; }
   .card__info {
@@ -337,7 +341,7 @@ main {
 .nav {
   padding: 1rem 0.5rem; }
   .nav__logo-container img {
-    max-width: 90px;
+    max-width: 10vw;
     max-height: 45px; }
   .nav__buttons li:not(:last-child) a {
     color: #fff;
@@ -391,7 +395,7 @@ main {
     color: white; }
   .header__store-inf {
     flex-direction: column;
-    margin: auto; }
+    margin: 0 auto .9rem; }
   .header__store-inf h2 {
     margin-top: 20px;
     font-size: clamp(1.5em, 7vw, 2.5em); }
@@ -510,7 +514,7 @@ main {
 
 @media screen and (min-width: 768px) {
   .slide-item2 {
-    display: block; } }
+    display: grid; } }
 
 #s1,
 #s2,
