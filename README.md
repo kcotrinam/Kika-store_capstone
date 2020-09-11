@@ -20,7 +20,7 @@
 
 ## :red_circle: Live Demo:
 
-[Live Demo Link](https://kcotrinam92.github.io/store_capstone/)
+[Live Demo Link](https://kcotrinam92.github.io/Kika-store_capstone/)
 
 ## :construction_worker: Getting Started
 
