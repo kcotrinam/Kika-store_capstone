@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("Gotham-Bold.otf");
+}
+
+@font-face {
+  font-family: "gotham-rounded-light";
+  src: url("gotham-rounded-light.otf");
+}
+
+body {
+  font-family: "gotham-rounded-light", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gotham-Bold", Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,111 @@
+.header {
+  background-color: red;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
+
+  &__carrousel {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+
+    & ul {
+      width: 400%;
+      animation: rotate 20s infinite;
+      animation-direction: alternate;
+    }
+
+    & li {
+      width: 100%;
+    }
+  }
+
+  &__information {
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  &__store-inf {
+    flex-direction: column;
+    margin: 0 auto 0.9rem;
+  }
+
+  &__store-inf h1 {
+    margin-top: 20px;
+    font-size: 4vw;
+
+    @include from(xl) {
+      font-size: 40px;
+    }
+  }
+
+  &__store-inf img {
+    width: 20vw;
+    max-width: 200px;
+    max-height: 100px;
+    margin: inherit;
+  }
+
+  &__search-container {
+    margin-top: 40px;
+  }
+
+  &__search-container input {
+    width: 20vw;
+    height: 33px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 0.5rem;
+  }
+
+  &__search-container a {
+    padding: 0.8rem;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    margin-left: 0;
+  }
+
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+
+  100% {
+    margin-left: -300%;
+  }
+}

@@ -1,0 +1,12 @@
+.btn {
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.7rem;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.9);
+  }
+}

@@ -1,0 +1,69 @@
+:root {
+  --primary-color: #d35266;
+  --secondary-color: #888;
+  --tertiary-color: #383838;
+}
+
+$border-color: hsla(0, 0, 50, 0.5);
+
+$colors: (
+  "primary-color": #d35266,
+  "secondary-color": #888,
+  "tertiary-color": #383838,
+  "warning-color": red,
+  "white-color": #fff,
+  "body-color": #f4f5f6,
+  "body-alternative": hsla(0, 0, 90%, 0.5),
+);
+
+$breakpoints: (
+  "xs": 360px,
+  "sm": 680px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1300px,
+);
+
+@each $name-color, $color in $colors {
+  .bg-#{$name-color} {
+    background-color: $color;
+  }
+}
+
+@each $name-color, $color in $colors {
+  .#{$name-color} {
+    color: $color;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}

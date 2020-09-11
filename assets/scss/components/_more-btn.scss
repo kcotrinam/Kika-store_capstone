@@ -1,0 +1,18 @@
+.card__modal {
+  bottom: 23px;
+  left: 0;
+  background: wheat;
+
+  & a {
+    padding: 0.25rem 0.25rem 0.75rem 0.25rem;
+    min-width: 200px;
+  }
+
+  & li:not(:last-child) a {
+    border-bottom: 1px solid black;
+  }
+}
+
+.more-input:checked ~ .card__modal {
+  display: block;
+}

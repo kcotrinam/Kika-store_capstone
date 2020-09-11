@@ -1,0 +1,51 @@
+.nav {
+  padding: 1rem 0.5rem;
+
+  &__logo-container img {
+    max-width: 7vw;
+    max-height: 45px;
+  }
+
+  &__buttons li:not(:last-child) a {
+    color: #fff;
+    font-size: 0.6em;
+    padding: 0.6em;
+
+    @include from(640px) {
+      font-size: 0.9em;
+    }
+
+    @include from(md) {
+      font-size: 1em;
+    }
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  &__buttons li:last-child a:hover {
+    background: hsl(350.69767, 59.447%, 47.45098%);
+  }
+
+  &__login-container > * + * {
+    margin-left: 0.9rem;
+  }
+
+  &__profile-pic {
+    cursor: pointer;
+  }
+
+  &__profile-pic img {
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  @include from(md) {
+    justify-content: space-around;
+
+    &__login-container {
+      display: flex;
+    }
+  }
+}
