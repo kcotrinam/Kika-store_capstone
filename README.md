@@ -42,7 +42,7 @@ To get a local copy up and running follow these simple steps:
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/kcotrinam92/store_capstone/issues).
+Feel free to check the [issues page](https://github.com/kcotrinam/store_capstone/issues).
 
 ## Show your support
 
